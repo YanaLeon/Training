@@ -26,8 +26,7 @@ html {
     padding: 0;
     margin: 0;
     font-family: 'Inter', sans-serif;
-    max-width: 1440px;
-    height: 1000px;
+    height: auto;
     overflow: auto;
     background: radial-gradient(311px at left, #301717, #1E1E1E 100%);
 }
@@ -55,13 +54,13 @@ nav {
     background-repeat: no-repeat;
 }
 .container-navbar{
-    max-width: 1140px;
     height: 73px;
     margin: 0px auto;
     display: flex;
     margin-left: 150px;
     margin-right: 150px;
     margin-top: 50px;
+    justify-content: space-between;
 }
 .logo-text {
     font-family: 'Montserrat';
@@ -74,7 +73,7 @@ nav {
 .container-navigator{
     margin-top: 11px;
     margin-bottom: 39px;
-    margin-left: 23px;
+    margin-right: 120px;
 }
 .menu{
     display: flex;
@@ -90,7 +89,6 @@ nav {
 .container-contacts {
     margin-top: 10px;
     margin-bottom: 39px;
-    margin-left: 139px;
 }
 .contacts-telegram, .contacts, .contacts-tel {
     font-family: 'Inter';
@@ -105,8 +103,26 @@ nav {
 .contacts {
     margin-left: 29px;
 }
+@media (max-width: 1300px) {
+    .contacts-telegram, .contacts {
+        display: none;
+    }
+    .container-navigator {
+        margin-right: 0px;
+    }
+}
 @media (max-width: 1100px) {
     .wrapper-header-second {
+        display: none;
+    }
+    .container-navigator{
+        margin-right: 0px;
+    }
+    .container-navbar {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .contacts-tel {
         display: none;
     }
 }
@@ -114,7 +130,7 @@ nav {
     .container-navbar {
         max-width: 320px;
         height: 55px;
-        margin-left: -20px;
+        margin-left: 0px;
         margin-right: 0px;
         margin-top: 6px;
     }
@@ -258,12 +274,36 @@ button {
 .content-consultation-min {
     display: none;
 }
+@media (max-width: 1100px) {
+    .container-main {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
 @media (max-width: 320px) {
+    .wrapper-main {
+        background-position: 15px 380px;
+    }
+    .wrapper-main-min {
+        background: url("./images/purple ball.png") no-repeat;
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 80px;
+        width: 120px;
+        top: 225px;
+        left: 280px;
+    }
+    main {
+        background: radial-gradient(at bottom left, #602121, #372525, #251d1d, #3c1d51);
+        max-width: 320px;
+        position: relative;
+    }
     .container-main {
         margin-top: 37px;
         margin-left: 14px;
         margin-right: 34px;
         flex-direction: column;
+        margin-bottom: -55px;
     }
     .text-main-advertising {
         font-size: 36px;
@@ -275,9 +315,11 @@ button {
     }
     .text-advertising-dop {
         padding-top: 15px;
+        padding-right: 0px;
     }
     .header-consultation {
-        padding-bottom: 45px;
+        padding-bottom: 20px;
+        padding-top: 45px;
     }
     .content-consultation {
         display: none;
@@ -318,13 +360,16 @@ button {
     .button-consultation {
         display: none;
     }
+    .header-consultation-text-free {
+        text-transform: none;
+    }
 }
 .footer-container {
     margin-left: 149px;
     margin-right: 150px;
     margin-top: 124px;
     display: grid;
-    grid-template-columns: 293px 196px 374px 280px;
+    grid-template-columns: 1.2fr 1.4fr 1.5fr 2fr;
     grid-template-rows: 208px 39px;
 }
 .text-name {
@@ -354,6 +399,9 @@ button {
 .footer-web {
     grid-column: 4; grid-row: 2
 }
+.footer-menu {
+    margin-left: 68px;
+}
 .text-footer-web {
     font-family: 'Montserrat';
     font-style: normal;
@@ -365,6 +413,15 @@ button {
 }
 .adress {
     padding-top: 20px;
+}
+.footer-con {
+    padding: 5px;
+}
+@media (max-width: 1100px) {
+    .footer-container {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 }
 @media (max-width: 320px) {
     .text-name {
@@ -379,22 +436,32 @@ button {
         margin-left: 15px;
         margin-right: 0px;
         display: grid;
-        grid-template-columns: 155px 179px;
-        grid-template-rows: 127px 181px 160px 73px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.7fr 1fr 1fr 0.2fr;
+        margin-top: 8px;
     }
     .footer-company {
-        grid-column: 1; grid-row: 1;
+        grid-column: 1 / span 2;
+        grid-row: 1;
     }
     .footer-menu {
-        grid-column: 1; grid-row: 2;
+        grid-column: 1;
+        grid-row: 2;
+        margin-left: 0px;
     }
     .footer-menu-continue {
-        grid-column: 2; grid-row: 2;
+        grid-column: 2;
+        grid-row: 2;
     }
     .footer-contact {
-        grid-column: 1; grid-row: 3;
+        grid-column: 1;
+        grid-row: 3;
     }
     .footer-web {
-        grid-column: 1; grid-row: 4;
+        grid-column: 1 / span 2;
+        grid-row: 4;
+    }
+    .footer-contact, .text-footer-web, .text-footer-web{
+        text-align: left;
     }
 }
