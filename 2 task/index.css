@@ -49,8 +49,8 @@
     overflow: hidden;
   }
   .wrapper-header-first {
-    background: -o-radial-gradient(602px 14px, 259px, #281f2f, #1e1e1e 100%);
-    background: radial-gradient(259px at 602px 14px, #281f2f, #1e1e1e 100%);
+    background: -o-radial-gradient(837px -85px, 259px, #281f2f, #1e1e1e 100%);
+    background: radial-gradient(259px at 837px -85px, #291339, #1e1e1e 100%);
   }
   .wrapper-header-second {
     background: url("./images/red ball.png") no-repeat;
