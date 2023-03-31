@@ -1,0 +1,400 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #E4E5EA;
+  }
+
+ol, ul, li {
+    list-style: none;
+}
+
+nav,footer,header, main {
+    display: block;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 2em;
+    margin: 0;
+}
+body,
+html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    max-width: 1440px;
+    height: 1000px;
+    overflow: auto;
+    background: radial-gradient(311px at left, #301717, #1E1E1E 100%);
+}
+nav,footer,header,main{
+    display: block;
+    overflow: hidden;
+}
+.wrapper-header-first {
+    background: radial-gradient(259px at 602px 14px, #281f2f, #1E1E1E 100%);
+}
+.wrapper-header-second {
+    background: url("./images/red ball.png") no-repeat;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 200;
+    height: 100px;
+    width: 109px;
+    top: 71px;
+    left: 504px;
+}
+nav {
+    width: 100%;
+    background: url("./images/purple ball.png") no-repeat;
+    background-position: 868px 0px;
+    background-repeat: no-repeat;
+}
+.container-navbar{
+    max-width: 1140px;
+    height: 73px;
+    margin: 0px auto;
+    display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+}
+.logo-text {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    color: #E4E5EA;
+    width: 140px;
+}
+.container-navigator{
+    margin-top: 11px;
+    margin-bottom: 39px;
+    margin-left: 23px;
+}
+.menu{
+    display: flex;
+}
+.menu li a {
+    padding-left: 30px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E4E5EA;
+}
+.container-contacts {
+    margin-top: 10px;
+    margin-bottom: 39px;
+    margin-left: 139px;
+}
+.contacts-telegram, .contacts, .contacts-tel {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+}
+.contacts-telegram {
+    margin-left: 46px;
+}
+.contacts {
+    margin-left: 29px;
+}
+@media (max-width: 1100px) {
+    .wrapper-header-second {
+        display: none;
+    }
+}
+@media (max-width: 320px) {
+    .container-navbar {
+        max-width: 320px;
+        height: 55px;
+        margin-left: -20px;
+        margin-right: 0px;
+        margin-top: 6px;
+    }
+    .container-logo {
+        display: none;
+    }
+    .container-contacts {
+        display: none;
+    }
+    .menu li a {
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        padding-left: 15px;
+    }
+    .sert {
+        display: none;
+    }
+}
+.wrapper-main {
+    background: url("./images/red ball-min.png") no-repeat;
+    background-position: 840px 325px;
+    background-repeat: no-repeat;
+}
+.container-main {
+    margin-top: 87px;
+    position: relative;
+    margin-left: 147px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.text-main-advertising {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    color: #E4E5EA;
+}
+.text-advertising {
+    font-family: 'Inter';
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-advertising-dop {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #E4E5EA;
+    padding-top: 31px;
+    padding-right: 22px;
+}
+.container-advertising {
+    flex-basis: 88px;
+}
+.container-consultation {
+    flex-basis: 301px;
+}
+.header-consultation-text {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    color: #E4E5EA;
+}
+.header-consultation-text-free {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.head {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #E4E5EA;
+}
+.text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #E4E5EA;
+    padding-top: 5px;
+}
+.content-consultation {
+    display: grid;
+    grid-template-columns: 165px 152px;
+    grid-template-rows: 97px 20px;
+    grid-column-gap: 13px;
+    margin-bottom: 108px;
+}
+.header-consultation {
+    padding-bottom: 40px;
+    padding-top: 17px;
+}
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #E4E5EA;
+}
+.button-consultation {
+    max-width: 262px;
+    height: 61px;
+    background-color: #4077F3;
+    margin-left: 68px;
+    display: flex;
+    justify-content: center;
+}
+.content-consultation-min {
+    display: none;
+}
+@media (max-width: 320px) {
+    .container-main {
+        margin-top: 37px;
+        margin-left: 14px;
+        margin-right: 34px;
+        flex-direction: column;
+    }
+    .text-main-advertising {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .text-advertising {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .text-advertising-dop {
+        padding-top: 15px;
+    }
+    .header-consultation {
+        padding-bottom: 45px;
+    }
+    .content-consultation {
+        display: none;
+    }
+    .header-consultation-text {
+        text-align: left;
+    }
+    .content-consultation-min {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .line {
+        width: 8px;
+        height: 2px;
+        background-image: linear-gradient(#FCB045, #FD1D1D);
+        background-size: 100% 2px;
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        display: inline-block;
+        margin-right: 5px;
+    }
+    .text-line {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #E4E5EA;
+    }
+    .content-min {
+        display: flex;
+        align-items: center;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .button-consultation {
+        display: none;
+    }
+}
+.footer-container {
+    margin-left: 149px;
+    margin-right: 150px;
+    margin-top: 124px;
+    display: grid;
+    grid-template-columns: 293px 196px 374px 280px;
+    grid-template-rows: 208px 39px;
+}
+.text-name {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #656566;
+    padding-bottom: 20px;
+}
+.text-footer {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E4E5EA;
+    padding-bottom: 10px;
+}
+.footer-menu-continue {
+    padding-top: 37px;
+}
+.footer-contact {
+    text-align: right;
+}
+.footer-web {
+    grid-column: 4; grid-row: 2
+}
+.text-footer-web {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    color: #E4E5EA;
+}
+.adress {
+    padding-top: 20px;
+}
+@media (max-width: 320px) {
+    .text-name {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .text-footer {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .footer-container {
+        margin-left: 15px;
+        margin-right: 0px;
+        display: grid;
+        grid-template-columns: 155px 179px;
+        grid-template-rows: 127px 181px 160px 73px;
+    }
+    .footer-company {
+        grid-column: 1; grid-row: 1;
+    }
+    .footer-menu {
+        grid-column: 1; grid-row: 2;
+    }
+    .footer-menu-continue {
+        grid-column: 2; grid-row: 2;
+    }
+    .footer-contact {
+        grid-column: 1; grid-row: 3;
+    }
+    .footer-web {
+        grid-column: 1; grid-row: 4;
+    }
+}
